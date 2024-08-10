@@ -1,0 +1,370 @@
+.navbar {
+  background-color: #b5cfb7;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+.navbar .home-link {
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #8fb092;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.navbar .nav-links a {
+  color: #333;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+  background-color: #8fb092;
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.contact-content,
+.about-content,
+.hobby-content {
+  padding-top: 60px;
+}
+
+.home-link {
+  color: white;
+}
+
+.home-page {
+  background-image: url("img/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  color: #fff;
+}
+
+.home-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.welcome-text {
+  font-family: "Pacifico", cursive;
+  font-size: 1em;
+  color: #fff;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.welcome-text {
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.welcome-text h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  font-family: "Gupter", serif; /*Fonts */
+}
+
+.welcome-text p {
+  font-size: 1.2em;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.description {
+  max-width: 600px;
+}
+
+.description h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  font-family: "Gupter", serif; /* Fonts */
+}
+
+.description p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+/* Photo Box */
+.photo-box {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.photo-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hobby-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.hobby-content h1 {
+  font-family: "Gupter", serif;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.image-item {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  padding: 10px;
+  text-align: center;
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.image-item:hover {
+  transform: scale(1.05);
+}
+
+.image-description {
+  font-family: "Arial", sans-serif;
+  font-size: 1em;
+  margin-top: 10px;
+  color: #333;
+}
+
+.contact-content {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  text-align: left;
+}
+
+.contact-content h2 {
+  font-family: "Gupter", serif;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.contact-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-content input,
+.contact-content textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.contact-content input[type="submit"] {
+  background-color: #b5cfb7;
+  color: #333;
+  cursor: pointer;
+  border: none;
+}
+
+.contact-content input[type="submit"]:hover {
+  background-color: #a5b7a7;
+}
+
+.contact-content .social-media {
+  margin-top: 30px;
+}
+
+.contact-content .social-media a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2em;
+  margin-right: 10px;
+}
+
+.contact-content .social-media a:hover {
+  color: #555;
+}
+
+/* Hobby Page Content */
+.hobby-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.hobby-content h1 {
+  font-family: "Gupter", serif;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.image-group {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.image-group .image-item {
+  display: inline-block;
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  background-color: white;
+}
+
+.image-group .guitar-image img {
+  width: 150px; /* Ukuran gambar */
+  height: 150px;
+  object-fit: cover;
+}
+
+.image-group .image-item:hover {
+  transform: scale(1.05);
+}
+
+.image-description-box {
+  display: inline-block;
+  width: 80%;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px auto 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.image-description {
+  font-family: "Arial", sans-serif;
+  font-size: 1em;
+  color: #333;
+}
+
+.contact-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact-content h1 {
+  font-family: "Gupter", serif;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  max-width: 600px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+.contact-form button {
+  background-color: #b5cfb7;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form button:hover {
+  background-color: #8fb092;
+}
+
+.social-media {
+  margin-top: 40px;
+}
+
+.social-media a {
+  margin: 0 15px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.social-media img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.social-media a:hover {
+  transform: scale(1.2);
+}
